@@ -1,0 +1,57 @@
+match_id,date,season,matchday,home_team,away_team,home_score,away_score,home_xg,away_xg,stadium,referee,status
+CL2021_MD1_001,2021-09-14,2021,1,Manchester City,RB Leipzig,6,3,2.8,1.2,Etihad Stadium,Sergei Karasev,finished
+CL2021_MD1_002,2021-09-14,2021,1,Paris Saint-Germain,Club Brugge,1,1,1.5,0.8,Parc des Princes,Jesus Gil Manzano,finished
+CL2021_MD1_003,2021-09-14,2021,1,Real Madrid,Inter Milan,0,1,1.2,0.9,Santiago Bernabeu,Anthony Taylor,finished
+CL2021_MD1_004,2021-09-14,2021,1,Liverpool,AC Milan,3,2,2.1,1.3,Anfield,Daniel Siebert,finished
+CL2021_MD1_005,2021-09-15,2021,1,Bayern Munich,Barcelona,3,0,2.5,0.6,Allianz Arena,Daniele Orsato,finished
+CL2021_MD1_006,2021-09-15,2021,1,Atletico Madrid,Porto,0,0,1.1,0.7,Wanda Metropolitano,Clement Turpin,finished
+CL2021_MD1_007,2021-09-15,2021,1,Ajax,Besiktas,2,0,1.8,0.5,Johan Cruijff Arena,Ovidiu Hategan,finished
+CL2021_MD1_008,2021-09-15,2021,1,Borussia Dortmund,Sporting CP,1,0,1.4,0.6,Signal Iduna Park,Srdjan Jovanovic,finished
+CL2021_MD1_009,2021-09-28,2021,2,RB Leipzig,Club Brugge,1,2,1.3,1.1,Red Bull Arena,Andreas Ekberg,finished
+CL2021_MD1_010,2021-09-28,2021,2,Manchester City,Paris Saint-Germain,2,2,2.2,1.8,Etihad Stadium,Carlos del Cerro Grande,finished
+CL2021_MD1_011,2021-09-28,2021,2,Inter Milan,Shakhtar Donetsk,2,0,1.6,0.8,San Siro,Ovidiu Hategan,finished
+CL2021_MD1_012,2021-09-28,2021,2,Real Madrid,Sheriff Tiraspol,1,2,2.1,0.9,Santiago Bernabeu,Lawrence Visser,finished
+CL2021_MD1_013,2021-09-29,2021,2,AC Milan,Atletico Madrid,1,2,1.2,1.5,San Siro,Szymon Marciniak,finished
+CL2021_MD1_014,2021-09-29,2021,2,Porto,Liverpool,1,5,0.8,2.4,Estadio do Dragao,Antonio Mateu Lahoz,finished
+CL2021_MD1_015,2021-09-29,2021,2,Barcelona,Benfica,3,0,2.3,0.7,Camp Nou,Daniele Orsato,finished
+CL2021_MD1_016,2021-09-29,2021,2,Bayern Munich,Dynamo Kyiv,5,0,3.1,0.3,Allianz Arena,Halil Umut Meler,finished
+CL2021_MD1_017,2021-10-19,2021,3,Club Brugge,Manchester City,1,4,0.9,2.6,Jan Breydel Stadium,Jose Maria Sanchez Martinez,finished
+CL2021_MD1_018,2021-10-19,2021,3,Paris Saint-Germain,RB Leipzig,3,2,2.4,1.1,Parc des Princes,Bjorn Kuipers,finished
+CL2021_MD1_019,2021-10-19,2021,3,Shakhtar Donetsk,Real Madrid,0,5,0.6,2.8,NSC Olimpiyskiy,Anthony Taylor,finished
+CL2021_MD1_020,2021-10-19,2021,3,Sheriff Tiraspol,Inter Milan,1,3,0.8,1.9,Stadionul Zimbru,Deniz Aytekin,finished
+CL2021_MD1_021,2021-10-20,2021,3,Atletico Madrid,AC Milan,0,1,1.0,1.3,Wanda Metropolitano,Daniel Siebert,finished
+CL2021_MD1_022,2021-10-20,2021,3,Liverpool,Porto,2,0,2.1,0.7,Anfield,Carlos del Cerro Grande,finished
+CL2021_MD1_023,2021-10-20,2021,3,Benfica,Barcelona,3,0,1.8,1.2,Estadio da Luz,Clement Turpin,finished
+CL2021_MD1_024,2021-10-20,2021,3,Dynamo Kyiv,Bayern Munich,1,2,0.7,2.2,NSC Olimpiyskiy,Sergei Karasev,finished
+CL2021_MD1_025,2021-11-02,2021,4,Manchester City,Club Brugge,4,1,2.9,0.8,Etihad Stadium,Ivan Kruzliak,finished
+CL2021_MD1_026,2021-11-02,2021,4,RB Leipzig,Paris Saint-Germain,2,1,1.5,1.6,Red Bull Arena,Michael Oliver,finished
+CL2021_MD1_027,2021-11-02,2021,4,Real Madrid,Shakhtar Donetsk,2,1,2.0,1.0,Santiago Bernabeu,Andreas Ekberg,finished
+CL2021_MD1_028,2021-11-02,2021,4,Inter Milan,Sheriff Tiraspol,3,1,2.2,0.9,San Siro,Ovidiu Hategan,finished
+CL2021_MD1_029,2021-11-03,2021,4,AC Milan,Atletico Madrid,0,1,1.1,1.4,San Siro,Sergei Karasev,finished
+CL2021_MD1_030,2021-11-03,2021,4,Porto,Liverpool,1,1,1.0,1.8,Estadio do Dragao,Halil Umut Meler,finished
+CL2021_MD1_031,2021-11-03,2021,4,Barcelona,Benfica,0,0,1.5,0.9,Camp Nou,Daniele Orsato,finished
+CL2021_MD1_032,2021-11-03,2021,4,Bayern Munich,Dynamo Kyiv,5,2,3.0,1.1,Allianz Arena,Clement Turpin,finished
+CL2021_MD1_033,2021-11-23,2021,5,Club Brugge,RB Leipzig,0,5,0.5,2.4,Jan Breydel Stadium,Jose Maria Sanchez Martinez,finished
+CL2021_MD1_034,2021-11-23,2021,5,Paris Saint-Germain,Manchester City,2,1,1.8,2.0,Parc des Princes,Antonio Mateu Lahoz,finished
+CL2021_MD1_035,2021-11-23,2021,5,Shakhtar Donetsk,Inter Milan,2,0,1.2,1.5,NSC Olimpiyskiy,Srdjan Jovanovic,finished
+CL2021_MD1_036,2021-11-23,2021,5,Sheriff Tiraspol,Real Madrid,0,3,0.6,2.1,Stadionul Zimbru,Daniel Siebert,finished
+CL2021_MD1_037,2021-11-24,2021,5,Atletico Madrid,Porto,3,1,1.9,1.2,Wanda Metropolitano,Carlos del Cerro Grande,finished
+CL2021_MD1_038,2021-11-24,2021,5,Liverpool,AC Milan,2,1,2.0,1.1,Anfield,Clement Turpin,finished
+CL2021_MD1_039,2021-11-24,2021,5,Benfica,Bayern Munich,2,5,1.1,2.8,Estadio da Luz,Daniele Orsato,finished
+CL2021_MD1_040,2021-11-24,2021,5,Dynamo Kyiv,Barcelona,0,1,0.6,1.7,NSC Olimpiyskiy,Lawrence Visser,finished
+CL2021_MD1_041,2021-12-07,2021,6,Manchester City,RB Leipzig,2,1,2.3,1.0,Etihad Stadium,Andreas Ekberg,finished
+CL2021_MD1_042,2021-12-07,2021,6,Club Brugge,Paris Saint-Germain,0,1,0.7,1.4,Jan Breydel Stadium,Sergei Karasev,finished
+CL2021_MD1_043,2021-12-07,2021,6,Inter Milan,Shakhtar Donetsk,2,0,1.8,0.8,San Siro,Ovidiu Hategan,finished
+CL2021_MD1_044,2021-12-07,2021,6,Real Madrid,Sheriff Tiraspol,3,0,2.5,0.5,Santiago Bernabeu,Deniz Aytekin,finished
+CL2021_MD1_045,2021-12-08,2021,6,Atletico Madrid,AC Milan,1,0,1.3,0.9,Wanda Metropolitano,Michael Oliver,finished
+CL2021_MD1_046,2021-12-08,2021,6,Porto,Liverpool,1,2,0.9,2.2,Estadio do Dragao,Antonio Mateu Lahoz,finished
+CL2021_MD1_047,2021-12-08,2021,6,Barcelona,Bayern Munich,0,3,0.8,2.4,Camp Nou,Carlos del Cerro Grande,finished
+CL2021_MD1_048,2021-12-08,2021,6,Dynamo Kyiv,Benfica,0,2,0.5,1.6,NSC Olimpiyskiy,Halil Umut Meler,finished
+CL2022_MD1_001,2022-09-06,2022,1,Eintracht Frankfurt,Sporting CP,0,3,0.8,1.5,Deutsche Bank Park,Jesus Gil Manzano,finished
+CL2022_MD1_002,2022-09-06,2022,1,Real Madrid,Celtic,3,0,2.1,0.4,Santiago Bernabeu,Srdjan Jovanovic,finished
+CL2022_MD1_003,2022-09-06,2022,1,Bayern Munich,Inter Milan,2,0,1.8,0.7,Allianz Arena,Daniele Orsato,finished
+CL2022_MD1_004,2022-09-06,2022,1,Manchester City,Sevilla,4,0,2.5,0.5,Etihad Stadium,Halil Umut Meler,finished
+CL2022_MD1_005,2022-09-07,2022,1,Paris Saint-Germain,Juventus,2,1,1.9,1.1,Parc des Princes,Anthony Taylor,finished
+CL2022_MD1_006,2022-09-07,2022,1,Benfica,Maccabi Haifa,2,0,1.7,0.6,Estadio da Luz,Andreas Ekberg,finished
+CL2022_MD1_007,2022-09-07,2022,1,Barcelona,Bayern Munich,0,2,0.8,1.9,Camp Nou,Clement Turpin,finished
+CL2022_MD1_008,2022-09-07,2022,1,Inter Milan,Barcelona,1,0,1.2,0.8,San Siro,Michael Oliver,finished

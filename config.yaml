@@ -1,0 +1,196 @@
+# CL Pipeline Configuration
+
+# Data Settings
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  sample_dir: "data/sample"
+  seasons: [2021, 2022, 2023, 2024, 2025]  # 2021-22 through 2025-26
+  min_matches_per_season: 96  # 16 teams * 6 matchdays (old format) or 36*8/2 (new)
+
+# Bookmakers for odds collection (priority order)
+bookmakers:
+  - "Bet365"
+  - "William Hill"
+  - "BoyleSports"
+  - "Betfair Exch"
+  - "Pinnacle"
+  - "Unibet"
+  - "Betway"
+
+# Models for ensemble (with default weights)
+models:
+  xGScore:
+    weight: 1.5
+    source: "xgscore.io"
+  Lines:
+    weight: 1.3
+    source: "lines.com"
+  KickOff:
+    weight: 1.2
+    source: "kickoff.co.uk"
+  Whoscored:
+    weight: 1.0
+    source: "whoscored.com"
+  ForaBet:
+    weight: 1.0
+    source: "forebet.com"
+  PredictStats:
+    weight: 1.0
+    source: "predictstats.com"
+  FootballNation:
+    weight: 0.8
+    source: "footballnation.eu"
+  WinComparator:
+    weight: 0.8
+    source: "wincomparator.com"
+
+# Backtest Settings
+backtest:
+  train_seasons: [2021, 2022, 2023]  # Walk-forward train
+  test_seasons: [2024, 2025]         # Walk-forward test
+  reoptimize_every_n_matchdays: 5
+  min_train_samples: 200
+  validation_split: 0.2
+  random_seed: 42
+
+# Ensemble Optimization
+ensemble:
+  method: "grid_search"  # or "bayesian"
+  objective: "logloss"   # or "brier", "roi"
+  weight_bounds: [0.05, 1.0]
+  n_iterations: 100
+  cv_folds: 5
+
+# Risk Management (from RISK_MANAGEMENT.md)
+risk:
+  bankroll: 10000.0
+  active_bankroll_pct: 0.70
+  reserve_opportunity_pct: 0.20
+  reserve_safety_pct: 0.10
+
+  kelly:
+    fraction: 0.25
+    max_stake_pct: 0.05
+    min_edge: 0.005
+
+  limits:
+    daily_loss_pct: 0.03
+    weekly_loss_pct: 0.08
+    monthly_loss_pct: 0.15
+    max_stake_per_day_pct: 0.10
+    max_exposure_per_match_pct: 0.05
+    max_exposure_per_team_pct: 0.15
+    max_exposure_per_league_pct: 0.30
+    max_correlation_exposure_pct: 0.10
+
+  correlation:
+    max_portfolio_corr: 0.35
+    same_match_max_markets: 2
+    correlation_matrix_file: "data/correlation_matrix.csv"
+
+  vol_targeting:
+    enabled: true
+    target_annual_vol: 0.15
+    lookback_days: 30
+    min_multiplier: 0.5
+    max_multiplier: 1.5
+
+  streak_adjustment:
+    enabled: true
+    hot_threshold: 0.65
+    hot_multiplier: 1.1
+    cold_threshold: 0.45
+    cold_multiplier: 0.7
+    consecutive_losses_cut: 4
+    loss_cut_multiplier: 0.5
+
+# Combo Definitions (from CL_ANALYSIS_STANDARD.md)
+combos:
+  fundacao:
+    name: "Fundação"
+    min_selections: 2
+    max_selections: 3
+    min_prob: 0.80
+    markets: ["home_win", "away_win"]
+    target_odds_range: [1.40, 1.70]
+    stake_pct: 0.04  # 3-5% -> use 4%
+    max_correlation: 0.20
+
+  cobertura:
+    name: "Cobertura"
+    min_selections: 3
+    max_selections: 5
+    base_markets: ["dc_1x", "dc_12"]
+    value_markets: ["btts_yes", "over_25", "over_35"]
+    target_odds_range: [2.00, 3.50]
+    stake_pct: 0.02
+    max_correlation: 0.35
+
+  especialista:
+    name: "Especialista"
+    min_selections: 3
+    max_selections: 4
+    single_market: true  # All same market
+    allowed_markets: ["over_25", "btts_yes", "corners_over"]
+    min_ev: 0.05
+    target_odds_range: [2.50, 5.00]
+    stake_pct: 0.01
+    max_correlation: 0.40
+
+  loteria:
+    name: "Loteria"
+    min_selections: 4
+    max_selections: 5
+    min_ev: 0.15
+    target_odds_min: 5.00
+    stake_pct: 0.005
+    max_correlation: 0.50
+
+# Confidence Thresholds
+confidence:
+  max_star:
+    min_prob: 0.85
+    kelly_fraction: 0.25
+    max_stake: 0.05
+  four_star:
+    min_prob: 0.75
+    kelly_fraction: 0.20
+    max_stake: 0.035
+  three_star:
+    min_prob: 0.65
+    kelly_fraction: 0.15
+    max_stake: 0.025
+  two_star:
+    min_prob: 0.55
+    kelly_fraction: 0.10
+    max_stake: 0.015
+  one_star:
+    min_prob: 0.00
+    kelly_fraction: 0.05
+    max_stake: 0.005
+
+# Simulation Settings
+simulation:
+  slippage_bps: 5  # 0.05% slippage
+  latency_ms: 100
+  commission_pct: 0.0  # Exchanges only
+  min_odds: 1.01
+  max_odds: 100.0
+
+# Output Settings
+output:
+  results_dir: "results"
+  backtest_prefix: "backtest_"
+  paper_trading_prefix: "paper_trading_"
+  report_format: "md"  # md, html, pdf
+  save_trade_log: true
+  save_daily_pnl: true
+
+# Dashboard Settings
+dashboard:
+  port: 8501
+  theme: "dark"
+  cache_ttl: 3600
+  max_rows_display: 1000
+  chart_height: 500
